@@ -1,0 +1,1 @@
+{"jobID":"7338f64c-40ff-0ce2-527b-e17ba7bfad14","spec":{"type":"policy","cause":{"Message":"","User":""},"spec":{"sample:deployment/sample-deployment":{"add":{"automated":"true"},"remove":{}}}},"result":null}
