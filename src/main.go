@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -11,5 +12,13 @@ func main() {
 }
 
 func goGitops(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Your UserAgent Is: %s", r.UserAgent())
+	fmt.Fprintf(w, "Hello from: %s", getHostname())
+}
+
+func getHostname() string {
+	hostname, err := os.Hostname()
+	if err != nil {
+		hostname = "not available"
+	}
+	return hostname
 }
