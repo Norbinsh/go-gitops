@@ -8,9 +8,8 @@ metadata:
     app: sample
   annotations:
     fluxcd.io/automated: 'true'
-    fluxcd.io/tag.app: semver:~1.0
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: sample
