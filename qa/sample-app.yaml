@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
       - name: sample
-        image: norbin/go-gitops:sha-a75230ba
+        image: norbin/go-gitops:edge
         ports:
         - containerPort: 80
