@@ -6,8 +6,11 @@ metadata:
   labels:
     run: sample
 spec:
+  type: NodePort
   ports:
   - port: 80
+    targetPort: 80
     protocol: TCP
+    name: http
   selector:
     run: sample
