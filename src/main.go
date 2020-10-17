@@ -11,5 +11,5 @@ func main() {
 }
 
 func goGitops(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "UserAgent: %s", r.UserAgent())
+	fmt.Fprintf(w, "Your UserAgent Is: %s", r.UserAgent())
 }
